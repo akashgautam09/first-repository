@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdits</title>
+    <style>
+        @media only screen and (orientation: portrait) {
+            .edits {
+                grid-template-rows: repeat(10, 1fr);
+                row-gap: 5px;
+            }
+        }
+
+        .parent {
+            /* box-sizing: border-box; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (orientation: landscape) {
+            .edits {
+                /* width: 70%; */
+                margin-top: 70px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                row-gap: 5px;
+                column-gap: 5px;
+            }
+            .navbar{
+                grid-template-columns: repeat(2, 1fr);                
+            }
+        }
+
+        .navbar {
+            /* border: 2px solid; */
+            width: 100%;
+            display: grid;
+            justify-self: center;
+            align-items: center;
+            /* column-gap: 4%; */
+        }
+
+        .items {
+            display: flex;
+            gap: 33px;
+            justify-content: center;
+            list-style: none;
+        }
+        ul li{
+            cursor: pointer;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(245, 244, 244, 0.437);
+            padding: 1rem;
+        }
+
+        .myfont {
+            font-weight: 550;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .download {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 7px;
+            margin-top: 28px;
+        }
+
+        .download1 {
+            text-decoration: underline rgb(32, 162, 213);
+            border-radius: 4px;
+            background-color: rgb(32, 162, 213);
+            color: white;
+            font-size: 18px;
+            padding: 4px;
+        }
+
+        .download2 {
+            text-decoration: underline rgb(38, 193, 38);
+            color: white;
+            background-color: rgb(38, 193, 38);
+            border-radius: 4px;
+            font-size: 18px;
+            padding: 4px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span class="logo">
+                <img src="https://btsoftware.com/images/ue.png" width="120px" alt="image">
+            </span>
+            <ul class="items">
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+        <div class="parent">
+            <span class="edits">
+                <span class="box">
+                    <div class="myfont">English</div>
+                    <br>
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*xpalyc*_gcl_au*MTcyNTY4NDI2Mi4xNzU1NDEzMTg0*_ga*NzI0MzYwNTQxLjE3NTU0MTMxODQ.*_ga_QNXHVTPWNS*czE3NTU0MjM0MDkkbzIkZzEkdDE3NTU0MjM0MjgkajQxJGwwJGg2Mjg0OTY4NDQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                    <!-- <div class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span>
+                    </div> -->
+                </span>
+                <span class="box">
+                    <div class="myfont">Deutsch</div>
+                    German
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*1egt9s9*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">Italiano</div>
+                    Italian
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*1g6co6v*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">Español</div>
+                    Spanish
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*1mj2hwm*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">français</div>
+                    French
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*1d7da5k*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">Português brasileiro</div>
+                    Brazilian Portuguese
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*b9pvaf*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">日本</div>
+                    Japanese
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe?_gl=1*b9pvaf*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">한국인</div>
+                    Korean
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*ow5l2v*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">中国</div>
+                    Chinese
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*ow5l2v*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+                <span class="box">
+                    <div class="myfont">中國</div>
+                    Traditional Chinese
+                    <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*1g4uqfr*_gcl_au*MTcwNzA1MTA5Mi4xNzU1NDE1ODMy*_ga*MTYyNDk5MzM4OC4xNzU1NDE1ODMz*_ga_QNXHVTPWNS*czE3NTU0MjQ3OTkkbzIkZzEkdDE3NTU0MjUyMDgkajU5JGwwJGg3NzkwMTc1ODQ."
+                        class="download english"><span class="download1">Download 32-bit</span>
+                        <span class="download2">Download 64-bit</span></a>
+                </span>
+            </span>
+        </div>
+    </header>
+</body>
+
+</html>
